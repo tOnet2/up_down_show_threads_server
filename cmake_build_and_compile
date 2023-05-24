@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cmake -S . -B Build && cmake --build Build && mkdir -p Server && mv Build/exe Server/exe && echo "exe file is lying within Server directory."
