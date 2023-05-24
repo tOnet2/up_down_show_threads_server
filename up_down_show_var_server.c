@@ -73,7 +73,7 @@ void* thread_main(void *argv)
 	char var_string[13];
 	int snprintf_return;
 	ssize_t recv_return;
-	while (cs && (recv_return = recv(cs, buf, 1450, 0))) {
+	while (cs && (recv_return = recv(cs, buf, 100, 0))) {
 		if (recv_return == 100) {
 			close(cs);
 			cs = 0;
